@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Passport</title>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.2.0/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./index.js"></script>
+</head>
+
+<body class="container" style="align-content:center; background-color:lightgrey">
+    <img src="image.jpg" />
+    <h2 style="font-size:50px; text-align:center ; background-color:#1d2e57 ;color:white"><img src="logo.png" />         INTERNATIONAL PASSPORT AGENCY</h2>
+
+    <table style="margin-left:auto; margin-right:auto;margin-top:50px;border-spacing:25px">
+        <tr>
+            <th style="background-color:#1d2e57; border-radius: 15px; color:white"><h2>Add Person</h2></th>
+            <th style="background-color:#1d2e57; border-radius: 15px; color:white"><h2>Add Location</h2></th>
+            <th style="background-color:#1d2e57; border-radius: 15px; color:white"><h2>Add Passport</h2></th>
+            <th style="background-color:#1d2e57; border-radius: 15px; color:white"><h2>Get Passport Detail</h2></th>
+            <th style="background-color:#1d2e57; border-radius: 15px;color:white"><h2>Get Personal Details</h2></th>
+        </tr>
+        <tr>
+            <td><input placeholder="PERSONAL ID" id="adprsid" /> </td>
+            <td> <input placeholder="PASSPORT ID" id="adlocpassid" /> </td>
+            <td> <input placeholder="PERSONAL ID" id="adpasid" /></td>
+            <td> <input placeholder="PASSPORT ID" id="getpasid" /></td>
+            <td> <input placeholder="PERSONAL ID" id="getprsid" /></td>
+
+        </tr>
+        <tr>
+            <td><input placeholder="FIRST NAME" id="adprsfn" /></td>
+            <td><input placeholder="PERSONAL ID" id="adlocprsid" /></td>
+            <td><input placeholder="NATION ID" id="adpasnid" /></td>
+            <td><button id="passbyID" style="font-size:large; background-color:#1d2e57;color:white">GET DETAILS </button></td>
+            <td><button id="personbyID" style="font-size:large;background-color:#1d2e57;color:white">GET DETAILS </button></td>
+
+        </tr>
+        <tr>
+            <td><input placeholder="LAST NAME" id="adprsln" /></td>
+            <td><input placeholder="ADDRESS LINE1" id="adlocad1" /></td>
+            <td><button id="addpass" style="background-color: #1d2e57; color: white">SUBMIT</button> </td>
+        </tr>
+        <tr>
+            <td> <input placeholder="PAASPORT COUNT" id="adprspc" /> </td>
+            <td> <input placeholder="CITY" id="adloccity" /></td>
+            <td> <label><b>PASSPORT ID:</b><p id="pid"></p></label> </td>
+
+            <td><label> <b>NATION ID: <p id="nationID"></p> </b> </label>
+            <td><label> <b>FIRST NAME: <p id="fname"></p> </b> </label>
+        </tr>
+        <tr>
+            <td> <input placeholder="EYE COLOR" id="adprseye" /></td>
+            <td> <input placeholder="DISTRICT" id="adlocdis" /></td>
+            <td>  </td>
+            <td><label> PASSPORT CREATED: <p id="passcreate"></p></label>
+            <td><label> <b>LAST NAME: <p id="lname"></p> </b> </label>
+
+        </tr>
+
+        <tr>
+            <td> <input placeholder="GENDER" id="adprsgen" /></td>
+            <td><input placeholder="STATE" id="adlocsta" /></td>
+            <td> </td>
+            <td><label> PASSPORT EXPIRY: <p id="passexp"></p></label>
+            <td><label> <b>BORN LOCATION: <p id="bornloc"></p> </b> </label>
+
+
+        </tr>
+
+        <tr>
+            <td><input placeholder="DOB" id="adprsdob" /></td>
+            <td><input placeholder="COUNTRY" id="adloccon" /></td>
+            <td> </td>
+            <td></td>
+            <td><label> <b>PASSPORT COUNT: <p id="passcount"></p> </b> </label>
+        </tr>
+
+        <tr>
+            <td><button id="addperson" style="background-color: #1d2e57; color: white">SUBMIT </button></td>
+            <td><button id="addlocat" style="background-color: #1d2e57; color: white">SUBMIT </button></td>
+
+        </tr>
+    </table>
+
+</body>
+</html>
